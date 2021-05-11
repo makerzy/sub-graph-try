@@ -2,13 +2,13 @@ specVersion: 0.0.2
 description: MarketPlace for BSC
 repository: https://github.com/graphprotocol/example-subgraph
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: MKTPlace
     network: rinkeby
     source:
-      address: '0xbE1608f63735193fBf4F89BE58acB0A7C4E421a0'
+      address: "0xbE1608f63735193fBf4F89BE58acB0A7C4E421a0"
       abi: ERC721Marketplace
     mapping:
       kind: ethereum/events
@@ -18,15 +18,15 @@ dataSources:
         - ERC721Marketplace
       abis:
         - name: ERC721Marketplace
-          file: ./abis/MktPlace.json
+          file: MKTPlace\abis\MktPlace.json
         - name: BASICNFT
-          file: ./abis/ERC721.json
+          file: MKTPlace\abis\ERC721.json
         - name: ERC20SymbolBytes
-          file: ./abis/ERC20Symbol.json
+          file: MKTPlace\abis\ERC20Symbol.json
         - name: ERC20NameBytes
-          file: ./abis/ERC20Name.json
+          file: MKTPlace\abis\ERC20Name.json
         - name: PlatformPayment
-          file: ./abis/PlatformPayment.json
+          file: MKTPlace\abis\PlatformPayment.json
       eventHandlers:
         - event: AuctionCreated(bytes32,address,uint256,uint256,uint256,address,address,uint256)
           handler: handleAuctionCreated
@@ -42,6 +42,4 @@ dataSources:
           handler: handlePriceUpdated
         - event: FeesUpdated(bytes32,address,uint256,uint256,uint256)
           handler: handleFeesUpdated
-      file: ./src/mapping.ts
-
-
+      file: MKTPlace\MKTPlace.wasm

@@ -1,0 +1,9 @@
+export const ADDRESS_ZERO = "0x0000000000000000000000000000000000000000";
+export const NFTMKTPLACE = "0x2b5D9AB169B86AF6025aCCea7e99fb08D60aF3CA";
+export const delfyToken = "0x4D4392D92e1928a4eb99B0F49525d62c536231D5f";
+export const OPEN = "open";
+export const SOLD = "sold";
+export const CANCELLED = "cancelled";
+export const ACTIVE = "active";
+export const DROPPED = "dropped";
+export const ACCEPTED = "accepted";

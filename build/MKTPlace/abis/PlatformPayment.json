@@ -1,0 +1,36 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_auctionId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPlatformCut",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "cutValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "refCut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_cashBack",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_total",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
