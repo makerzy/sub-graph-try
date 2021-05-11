@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 description: MarketPlace for BSC
-repository: https://github.com/graphprotocol/example-subgraph
+repository: https://github.com/makerzy/sub-graph-try
 schema:
   file: ./schema.graphql
 dataSources:
@@ -8,7 +8,7 @@ dataSources:
     name: MKTPlace
     network: rinkeby
     source:
-      address: '0xbE1608f63735193fBf4F89BE58acB0A7C4E421a0'
+      address: '0x2b5D9AB169B86AF6025aCCea7e99fb08D60aF3CA'
       abi: ERC721Marketplace
     mapping:
       kind: ethereum/events
